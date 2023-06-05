@@ -22,9 +22,9 @@ Resources
 
 This module should be called by a Terraform Cloud environment configuration
 
-- Assigning the tag "auto-apply" wil configure the target workspace to be flagged as automatic apply
-
-- tfe_variables must all be of a single type or Terraform will error. 
+- Assigning the tag "auto-apply" will configure the target workspace to be flagged as automatic apply
+- Tfe_variables must all be of a single type or Terraform will error
+- Passing a list of sentinal policy set names will assign them to the deployed workspaces 
 
 ##### Usage
 

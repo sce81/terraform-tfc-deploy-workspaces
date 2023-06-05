@@ -5,7 +5,7 @@ variable "name" {
 
 variable "project_id" {
   type        = string
-  description = "Name of the project to assign the workspace to"
+  description = "ID of the Project to assign the workspace to"
   default     = null
 }
 

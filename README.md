@@ -37,7 +37,7 @@ module "TFC_Workspace_Example" {
   organization                  = data.tfe_organization.main.name
   vcs_repo                      = local.base_infra_repo
   tfe_variables                 = each.value
-  project_id                    = data.tfc_project.main.id
+  project_id                    = data.tfe_project.main.id
   workspace_tags                = [each.key, "example", "terraform-cloud", "auto-apply"]
   sentinel_policy               = ["Require-Resources-from-PMR","Enforce-Tagging-Policy"]
 }
